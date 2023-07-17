@@ -5,8 +5,8 @@ const route = useRoute();
 </script>
 <template>
   <header class="main-layout__header">
-    <h1 class="main-layout__header__title" v-if="route.name === 'index'">{{ route.name  }}</h1>
-    <h1 class="main-layout__header__title">{{ route.name  }}</h1>
+    <h1 class="main-layout__header__title" v-if="route.name === 'index'">Home</h1>
+    <h1 class="main-layout__header__title" v-else>{{ route.name  }}</h1>
   </header>
 </template>
 
